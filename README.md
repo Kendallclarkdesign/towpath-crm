@@ -2,7 +2,7 @@
 
 A small CRM for a small agency where AI agents appear on the team. Built with plain JavaScript modules, no build step, and Supabase for data and login. Part of Kendall Clark's portfolio.
 
-Case study: https://kendallclark.design/case-study-towpath-crm
+Case study: https://kendallclarkdesign.github.io/portfolio/case-study-towpath-crm
 
 ## What it does
 
