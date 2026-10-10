@@ -1,0 +1,14 @@
+# DRAFT hosting config. Nothing is deployed until you approve it.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000"
+    # Fonts, the embedded Google Calendar, and (later) your Supabase project only.
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; frame-src https://calendar.google.com; connect-src 'self' https://YOUR-PROJECT.supabase.co; img-src 'self' data:; base-uri 'self'; form-action 'self'"

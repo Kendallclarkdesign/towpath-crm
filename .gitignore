@@ -1,0 +1,10 @@
+.DS_Store
+.netlify
+_site
+node_modules
+.env
+.env.*
+tools/.venv
+tools/_out
+tools/__pycache__
+tools/seo_vault.csv
